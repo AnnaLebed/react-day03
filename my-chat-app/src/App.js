@@ -12,7 +12,11 @@ class App extends React.Component {
     this.grabInput = this.grabInput.bind(this)
   }
   grabInput(valueString){
-    this.setState({messagesList : this.state.messagesList.push(valueString)})
+    console.log(valueString)
+    let newArray = this.state.messagesList
+    newArray.push(valueString)
+    this.setState({messagesList : newArray})
+    // this.setState({messagesList : this.state.messagesList.push(valueString)})
 
   }
   render(){

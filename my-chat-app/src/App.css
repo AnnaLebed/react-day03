@@ -1,19 +1,8 @@
 .App {
   text-align: center;
   width: 500px;
-  border-radius:55px;
+  border-radius:50px;
 }
-/* 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-} */
-
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
 
 .header {
   background-color: #41a8d8;
@@ -32,12 +21,21 @@
   box-sizing: border-box;
   padding: 0 0 0 6px;
   margin: 0;
-  width: 100%;
+  /* width: auto; */
   height: 500px;
   /* overflow: scroll; */
   background: white;
-  
 }
+
+.message-box{
+  background:  #41a8d8;
+  color:white;
+  height:25px;
+  border-radius:15px;
+  margin:5px;
+  width: auto;
+}
+
 
 .send-message-form {  
   display: flex;

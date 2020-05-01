@@ -20,13 +20,15 @@ export default class SendMessageForm extends Component {
     e.preventDefault();
     console.log(`The form was submitted with ${this.state.message}`);
     this.props.callbackFc(this.state.message);
-    // this.props.onMessageFormSubmit(this.state);
+    this.setState({
+      message:''
+    });
   }
 
   render() {   
     return (
       <form onSubmit={this.handleSubmit} className="send-message-form">
-        <input
+        <input type="text" 
           className="form-input"
           onChange={this.handleChange}
           value={this.state.message}
